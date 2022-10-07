@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://maxtullius.github.io/Max/blog/2022/05/10/AppLab.html</loc>
+<lastmod>2022-05-10T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>https://maxtullius.github.io/Max/notebook/2022/06/10/Dictionary.html</loc>
 <lastmod>2022-06-10T00:00:00-05:00</lastmod>
 </url>
@@ -11,6 +15,14 @@
 <url>
 <loc>https://maxtullius.github.io/Max/jupyter/2022/09/09/FirstNotebook.html</loc>
 <lastmod>2022-09-09T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://maxtullius.github.io/Max/notebook/2022/09/16/notebookquiz.html</loc>
+<lastmod>2022-09-16T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://maxtullius.github.io/Max/2022/10/06/Bash.html</loc>
+<lastmod>2022-10-06T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://maxtullius.github.io/Max/about/</loc>
