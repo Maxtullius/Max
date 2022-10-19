@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Projectplan",
+            "content": "Project Plan . Main Function . Our final project will be a website that will be a webstie that will be a website that will help people create music playlists. We will have different genres represented by diferent html tabs at the top of our blog. When these are clicked there will be links to the different posts. These posts will be different artists and there will be a paragraph to describe them. Then we will put some of the most popular songs by these artist. We wil also add who these artists are similar to and what songs are similar to each other. Outline . | We will begin with creating the html tabs of the different genres. We will be doing, rap, rock, country, and pop. We will add the history of this genre and what it sounds like. There will be a summery of why someone might like it. | We will then create the posts of the artists. We will make sure to add at least 5 artists to each genre. We wil add their backstory and what their music sounds like. we will also add what other artists they sound like. | Then we will ads the songs of each of these artists. 5 songs per artist. A total of 100 songs will be added. We will also right similar songs t these. College Board Criteria . | Row 1: Program Purpose and Function. The purpose of the website will be to create a playlist. The functin will be different posts create and html tabs that are linked to these. | Row 2: Data Abstraction. We will be able to explain the variables of artists, songs, and genres. | Row 3: Managing Complexity. If we run into problems we will ask each other questions. | Row 4: Procedural Abstraction. We will understand our process nd manage our time well. | Row 5: Algorithm Implementation. Organizign by genre, artist, and songs will show this. | Row 6: Testing. Testing will occur after we create the webstie. We will make sure every page is running well. | .",
+            "url": "https://maxtullius.github.io/Max/2022/10/19/ProjectPlan.html",
+            "relUrl": "/2022/10/19/ProjectPlan.html",
+            "date": " • Oct 19, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Project Plan",
             "content": "",
             "url": "https://maxtullius.github.io/Max/2022/10/19/Project.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Title",
             "content": "",
             "url": "https://maxtullius.github.io/Max/2022/10/18/Bash.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "Big Idea 1 'Identifying and Correcting Errors'",
             "content": "College Board Big Idea 1 . Identifying and Correcting Errors (Unit 1.4) . Become familiar with types of errors and strategies to fixing them . Lightly Review Videos and take notes on topics with Blog | Complete assigned MCQ questions | . Here are some code segments you can practice fixing: . alphabet = &quot;abcdefghijklmnopqrstuvwxyz&quot; alphabetList = [] for i in alphabet: alphabetList.append(i) print(alphabetList) . The intended outcome is to determine where the letter is in the alphabet using a while loop . What is a good test case to check the current outcome? Why? | Make changes to get the intended outcome. | . letter = input(&quot;What letter would you like to check?&quot;) i = 0 while i &lt; 26: if alphabetList[i] == letter: print(&quot;The letter &quot; + letter + &quot; is the &quot; + str(i) + &quot; letter in the alphabet&quot;) i += 1 . The intended outcome is to determine where the letter is in the alphabet using a for loop . What is a good test case to check the current outcome? Why? | Make changes to get the intended outcome. | . letter = input(&quot;What letter would you like to check?&quot;) for i in alphabetList: count = 0 if i == letter: print(&quot;The letter &quot; + letter + &quot; is the &quot; + str(count) + &quot; letter in the alphabet&quot;) count += 1 . This code outputs the even numbers from 0 - 10 using a while loop. . Analyze this code to determine what can be changed to get the outcome to be odd numbers. (Code block below) | . evens = [] i = 0 while i &lt;= 10: evens.append(i) i += 2 print(evens) . This code should output the odd numbers from 0 - 10 using a while loop. . odds = [] i = 0 while i &lt;= 10: odds.append(i) i += 2 print(odds) . This code outputs the even numbers from 0 - 10 using a for loop. . Analyze this code to determine what can be changed to get the outcome to be odd numbers. (Code block below) | . numbers = [0,1,2,3,4,5,6,7,8,9,10] evens = [] for i in numbers: if (numbers[i] % 2 == 0): evens.append(numbers[i]) print(evens) . This code should output the odd numbers from 0 - 10 using a for loop. . numbers = [0,1,2,3,4,5,6,7,8,9,10] odds = [] for i in numbers: if (numbers[i] % 2 == 0): odds.append(numbers[i]) print(odds) . The intended outcome is printing a number between 1 and 100 once, if it is a multiple of 2 or 5 . What values are outputted incorrectly. Why? | Make changes to get the intended outcome. | . numbers = [] newNumbers = [] i = 0 while i &lt; 100: numbers.append(i) i += 1 for i in numbers: if numbers[i] % 5 == 0: newNumbers.append(numbers[i]) if numbers[i] % 2 == 0: newNumbers.append(numbers[i]) print(newNumbers) . Challenge . This code segment is at a very early stage of implementation. . What are some ways to (user) error proof this code? | The code should be able to calculate the cost of the meal of the user | . Hint: . write a “single” test describing an expectation of the program of the program | test - input burger, expect output of burger price | run the test, which should fail because the program lacks that feature | write “just enough” code, the simplest possible, to make the test pass | . Then repeat this process until you get program working like you want it to work. . menu = {&quot;burger&quot;: 3.99, &quot;fries&quot;: 1.99, &quot;drink&quot;: 0.99} total = 0 #shows the user the menu and prompts them to select an item print(&quot;Menu&quot;) for k,v in menu.items(): print(k + &quot; $&quot; + str(v)) #why does v have &quot;str&quot; in front of it? #ideally the code should prompt the user multiple times item = input(&quot;Please select an item from the menu&quot;) #code should add the price of the menu items selected by the user print(total) . Hacks . Now is a good time to think about Testing of your teams final project... . What errors may arise in your project? | What are some test cases that can be used? | Make sure to document any bugs you encounter and how you solved the problem. | What are “single” tests that you will perform on your project? Or, your part of the project? As Hack Design and Test plan action … Divide these “single” tests into Issues for Scrum Board prior to coding. FYI, related tests could be in same Issue by using markdown checkboxes to separate tests. | . | .",
             "url": "https://maxtullius.github.io/Max/collegeboard/error",
@@ -34,7 +45,7 @@
     
   
     
-        ,"post3": {
+        ,"post4": {
             "title": "Notebook Test",
             "content": "from ctypes.wintypes import MSG from email import message from socket import MsgFlag def question_answer(prompt): print(&quot;Question: &quot; + prompt) MSG = input(&quot;2&quot;) print(&quot;Answer: &quot; + MSG) question_answer(&quot;What is 1+1?&quot;) . Question: What is 1+1? Answer: 2 . def question_answer(prompt): print(&quot;Question: &quot; + prompt) MSG = input(&quot;1920&quot;) print(&quot;Answer: &quot; + MSG) question_answer(&quot;When was the NFL created?&quot;) . Question: When was the NFL created? Answer: 1920 . def question_answer(prompt): print(&quot;Question: &quot; + prompt) MSG = input(&quot;Packers&quot;) print(&quot;Answer: &quot; + MSG) question_answer(&quot;Who won the first Super Bowl?&quot;) . Question: Who won the first Super Bowl? Answer: packers .",
             "url": "https://maxtullius.github.io/Max/notebook/2022/09/16/notebookquiz.html",
@@ -45,7 +56,7 @@
     
   
     
-        ,"post4": {
+        ,"post5": {
             "title": "My first Blog",
             "content": "print(&quot;hello world&quot;) . hello world . Blog . I like pizz | .",
             "url": "https://maxtullius.github.io/Max/jupyter/2022/09/09/FirstNotebook.html",
@@ -56,7 +67,7 @@
     
   
     
-        ,"post5": {
+        ,"post6": {
             "title": "An Example Markdown Post",
             "content": "This is my first Markdown . You must run cells above to define project . echo “Navigate to project, then navigate to area wwhere files were cloned” . cd $project echo “show the contents of README.md” echo “” . cat README.md # show contents of file, in this case markdown echo “” echo “end of README.md” .",
             "url": "https://maxtullius.github.io/Max/markdown/2022/09/09/FirstMarkdown.html",
@@ -67,7 +78,7 @@
     
   
     
-        ,"post6": {
+        ,"post7": {
             "title": "Scrumprocess",
             "content": "Scrumprocess . . title: Scrumprocess | toc: true | comments: true | categories: [Blog] | - | . | . .",
             "url": "https://maxtullius.github.io/Max/2022/07/22/ScrumProcess.html",
@@ -78,7 +89,7 @@
     
   
     
-        ,"post7": {
+        ,"post8": {
             "title": "List and Dictionary",
             "content": "InfoDb = [] InfoDb.append({ &quot;FirstName&quot;: &quot;Max&quot;, &quot;LastName&quot;: &quot;Tullius&quot;, &quot;DOB&quot;: &quot;February 1&quot;, &quot;Residence&quot;: &quot;San Diego&quot;, &quot;FavColor&quot;: &quot;Purple&quot;, &quot;Email&quot;: &quot;max@lrtullius.com&quot;, &quot;Owns_Cars&quot;: [&quot;No Car&quot;] }) InfoDb.append({ &quot;FirstName&quot;: &quot;Jake&quot;, &quot;LastName&quot;: &quot;Warren&quot;, &quot;DOB&quot;: &quot;September 8&quot;, &quot;Residence&quot;: &quot;San Diego&quot;, &quot;FavColor&quot;: &quot;Blue&quot;, &quot;Email&quot;: &quot;jacobw22751@stu.powayusd.com&quot;, &quot;Owns_Cars&quot;: [&quot;2016-Toyota Tacoma&quot;] }) InfoDb.append({ &quot;FirstName&quot;: input(&quot;Name:&quot;), &quot;LastName&quot;: input(&quot;Last Name:&quot;), &quot;DOB&quot;: input(&quot;DOB:&quot;), &quot;Residence&quot;: input(&quot;Residence&quot;), &quot;FavColor&quot;: input(&quot;Favorite Color&quot;), &quot;Email&quot;: input(&quot;Email:&quot;), &quot;Owns_Cars&quot;: input(&quot;Owned_Cars:&quot;) }) print(InfoDb) . [{&#39;FirstName&#39;: &#39;Max&#39;, &#39;LastName&#39;: &#39;Tullius&#39;, &#39;DOB&#39;: &#39;February 1&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;FavColor&#39;: &#39;Purple&#39;, &#39;Email&#39;: &#39;max@lrtullius.com&#39;, &#39;Owns_Cars&#39;: [&#39;No Car&#39;]}, {&#39;FirstName&#39;: &#39;Jake&#39;, &#39;LastName&#39;: &#39;Warren&#39;, &#39;DOB&#39;: &#39;September 8&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;FavColor&#39;: &#39;Blue&#39;, &#39;Email&#39;: &#39;jacobw22751@stu.powayusd.com&#39;, &#39;Owns_Cars&#39;: [&#39;2016-Toyota Tacoma&#39;]}, {&#39;FirstName&#39;: &#39;Max&#39;, &#39;LastName&#39;: &#39;Tullius&#39;, &#39;DOB&#39;: &#39;February 1&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;FavColor&#39;: &#39;Purple&#39;, &#39;Email&#39;: &#39;max@lrtullius.com&#39;, &#39;Owns_Cars&#39;: &#39;No Car&#39;}] . def print_data(d_rec): print(d_rec[&quot;FirstName&quot;], d_rec[&quot;LastName&quot;]) # using comma puts space between values print(&quot; t&quot;, &quot;Residence:&quot;, d_rec[&quot;Residence&quot;]) # t is a tab indent print(&quot; t&quot;, &quot;FavColor:&quot;, d_rec[&quot;FavColor&quot;]) print(&quot; t&quot;, &quot;Birth Day:&quot;, d_rec[&quot;DOB&quot;]) print(&quot; t&quot;, &quot;Cars:&quot;, d_rec[&quot;Owns_Cars&quot;]) # end=&quot;&quot; make sure no return occurs print() def for_loop(): print(&quot;For loop output n&quot;) for record in InfoDb: print_data(record) for_loop() . For loop output Max Tullius Residence: San Diego FavColor: Purple Birth Day: February 1 Cars: [&#39;No Car&#39;] Jake Warren Residence: San Diego FavColor: Blue Birth Day: September 8 Cars: [&#39;2016-Toyota Tacoma&#39;] Max Tullius Residence: San Diego FavColor: Purple Birth Day: February 1 Cars: No Car .",
             "url": "https://maxtullius.github.io/Max/notebook/2022/06/10/Dictionary.html",
@@ -89,7 +100,7 @@
     
   
     
-        ,"post8": {
+        ,"post9": {
             "title": "App Lab Notes",
             "content": "Notes . My test is about the NFL | For everything you put you need event | Use a playspeech bar in event for wrong answers | When the question is answered you have to use the setscreen command to go to the next question | . My Quiz . https://studio.code.org/projects/applab/xLIAqcPGXDiH_RvTNshZYcz_WuaeP7Q6K_t976Xw2zw | . Issues . I couldn&#39;t figure out how to make the sound go off per button but then I needed to add the event with play speech | .",
             "url": "https://maxtullius.github.io/Max/blog/2022/05/10/AppLab.html",
