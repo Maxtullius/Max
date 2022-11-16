@@ -4,9 +4,9 @@
         "post0": {
             "title": "Title",
             "content": "",
-            "url": "https://maxtullius.github.io/Max/2022/11/09/Bash.html",
-            "relUrl": "/2022/11/09/Bash.html",
-            "date": " • Nov 9, 2022"
+            "url": "https://maxtullius.github.io/Max/2022/11/15/Bash.html",
+            "relUrl": "/2022/11/15/Bash.html",
+            "date": " • Nov 15, 2022"
         }
         
     
@@ -46,6 +46,17 @@
   
     
         ,"post4": {
+            "title": "Title",
+            "content": "",
+            "url": "https://maxtullius.github.io/Max/2022/10/06/Bash.html",
+            "relUrl": "/2022/10/06/Bash.html",
+            "date": " • Oct 6, 2022"
+        }
+        
+    
+  
+    
+        ,"post5": {
             "title": "Big Idea 1 'Identifying and Correcting Errors'",
             "content": "College Board Big Idea 1 . Identifying and Correcting Errors (Unit 1.4) . Become familiar with types of errors and strategies to fixing them . Lightly Review Videos and take notes on topics with Blog | Complete assigned MCQ questions | . Here are some code segments you can practice fixing: . alphabet = &quot;abcdefghijklmnopqrstuvwxyz&quot; alphabetList = [] for i in alphabet: alphabetList.append(i) print(alphabetList) . [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;, &#39;g&#39;, &#39;h&#39;, &#39;i&#39;, &#39;j&#39;, &#39;k&#39;, &#39;l&#39;, &#39;m&#39;, &#39;n&#39;, &#39;o&#39;, &#39;p&#39;, &#39;q&#39;, &#39;r&#39;, &#39;s&#39;, &#39;t&#39;, &#39;u&#39;, &#39;v&#39;, &#39;w&#39;, &#39;x&#39;, &#39;y&#39;, &#39;z&#39;] . The intended outcome is to determine where the letter is in the alphabet using a while loop . What is a good test case to check the current outcome? Why? | Make changes to get the intended outcome. | . letter = input(&quot;What letter would you like to check?&quot;) i = 0 while i &lt; 26: if alphabetList[i] == letter: print(&quot;The letter &quot; + letter + &quot; is the &quot; + str(i) + &quot; letter in the alphabet&quot;) i += 1 . The intended outcome is to determine where the letter is in the alphabet using a for loop . What is a good test case to check the current outcome? Why? | Make changes to get the intended outcome. | . letter = input(&quot;What letter would you like to check?&quot;) for i in alphabetList: count = 0 if i == letter: print(&quot;The letter &quot; + letter + &quot; is the &quot; + str(count) + &quot; letter in the alphabet&quot;) count += 1 . This code outputs the even numbers from 0 - 10 using a while loop. . Analyze this code to determine what can be changed to get the outcome to be odd numbers. (Code block below) | . evens = [] i = 0 while i &lt;= 10: evens.append(i) i += 2 print(evens) . [0, 2, 4, 6, 8, 10] . This code should output the odd numbers from 0 - 10 using a while loop. . odds = [] i = 0 while i &lt;= 10: odds.append(i) i += 2 print(odds) . [0, 2, 4, 6, 8, 10] . This code outputs the even numbers from 0 - 10 using a for loop. . Analyze this code to determine what can be changed to get the outcome to be odd numbers. (Code block below) | . numbers = [0,1,2,3,4,5,6,7,8,9,10] evens = [] for i in numbers: if (numbers[i] % 2 == 0): evens.append(numbers[i]) print(evens) . [0, 2, 4, 6, 8, 10] . This code should output the odd numbers from 0 - 10 using a for loop. . numbers = [0,1,2,3,4,5,6,7,8,9,10] odds = [] for i in numbers: if (numbers[i] % 2 == 0): odds.append(numbers[i]) print(odds) . [0, 2, 4, 6, 8, 10] . The intended outcome is printing a number between 1 and 100 once, if it is a multiple of 2 or 5 . What values are outputted incorrectly. Why? | Make changes to get the intended outcome. | . numbers = [] newNumbers = [] i = 0 while i &lt; 100: numbers.append(i) i += 1 for i in numbers: if numbers[i] % 5 == 0: newNumbers.append(numbers[i]) if numbers[i] % 2 == 0: newNumbers.append(numbers[i]) print(newNumbers) . [0, 0, 2, 4, 5, 6, 8, 10, 10, 12, 14, 15, 16, 18, 20, 20, 22, 24, 25, 26, 28, 30, 30, 32, 34, 35, 36, 38, 40, 40, 42, 44, 45, 46, 48, 50, 50, 52, 54, 55, 56, 58, 60, 60, 62, 64, 65, 66, 68, 70, 70, 72, 74, 75, 76, 78, 80, 80, 82, 84, 85, 86, 88, 90, 90, 92, 94, 95, 96, 98] . Challenge . This code segment is at a very early stage of implementation. . What are some ways to (user) error proof this code? | The code should be able to calculate the cost of the meal of the user | . Hint: . write a “single” test describing an expectation of the program of the program | test - input burger, expect output of burger price | run the test, which should fail because the program lacks that feature | write “just enough” code, the simplest possible, to make the test pass | . Then repeat this process until you get program working like you want it to work. . menu = {&quot;burger&quot;: 3.99, &quot;fries&quot;: 1.99, &quot;drink&quot;: 0.99 } total = 0 #shows the user the menu and prompts them to select an item print(&quot;Menu&quot;) for k,v in menu.items(): print(k + &quot; $&quot; + str(v)) #why does v have &quot;str&quot; in front of it? #ideally the code should prompt the user multiple times item = input(&quot;Please select an item from the menu&quot;) total= menu[item] #code should add the price of the menu items selected by the user print(total) . Menu burger $3.99 fries $1.99 drink $0.99 3.99 . Hacks . Now is a good time to think about Testing of your teams final project... . What errors may arise in your project? | What are some test cases that can be used? | Make sure to document any bugs you encounter and how you solved the problem. | What are “single” tests that you will perform on your project? Or, your part of the project? As Hack Design and Test plan action … Divide these “single” tests into Issues for Scrum Board prior to coding. FYI, related tests could be in same Issue by using markdown checkboxes to separate tests. | . | .",
             "url": "https://maxtullius.github.io/Max/collegeboard/error",
@@ -56,7 +67,7 @@
     
   
     
-        ,"post5": {
+        ,"post6": {
             "title": "Notebook Test",
             "content": "from ctypes.wintypes import MSG from email import message from socket import MsgFlag def question_answer(prompt): print(&quot;Question: &quot; + prompt) MSG = input(&quot;2&quot;) print(&quot;Answer: &quot; + MSG) question_answer(&quot;What is 1+1?&quot;) . Question: What is 1+1? Answer: 2 . def question_answer(prompt): print(&quot;Question: &quot; + prompt) MSG = input(&quot;1920&quot;) print(&quot;Answer: &quot; + MSG) question_answer(&quot;When was the NFL created?&quot;) . Question: When was the NFL created? Answer: 1920 . def question_answer(prompt): print(&quot;Question: &quot; + prompt) MSG = input(&quot;Packers&quot;) print(&quot;Answer: &quot; + MSG) question_answer(&quot;Who won the first Super Bowl?&quot;) . Question: Who won the first Super Bowl? Answer: packers .",
             "url": "https://maxtullius.github.io/Max/notebook/2022/09/16/notebookquiz.html",
@@ -67,7 +78,7 @@
     
   
     
-        ,"post6": {
+        ,"post7": {
             "title": "Tri 1 Final Missed Questions",
             "content": "Missed Questions . I missed questions: 22, 26, 28, 35, 47, 48, and 49. | On question 22 I selected answer B. I took an estimated guess because I didn&#39;t understand or know the question. The correct answer was C. | On question 26 I selected answer C. I chose this answer because it seemed like the best answer to the question. The correct answer was A. | On question 28 I selected option D. I did this because I knew that it could not be A or B so I took the 50/50 chance and chose D. The correct answer was C. | On question 35 I selected options D and B. I the answer that was wrong was B. I chose B as my guess because I knew it was D and couldn&#39;t figure out what the other answer was so I took a guess. The other correct answer was A. | On question 47 I selected A. I misclicked and did not check over the questions. The correct answer was D. | On question 48 I selected B. I did this because in the code segment I saw that 50-&gt;y so without looking at the rest of the code segment. The correct answer was C. | On question 49 I selected D. I don&#39;t really know why I chose this answer it was mostly a guess and if I am being honest I was just trying to finsih the Final. The correct answer was C. | .",
             "url": "https://maxtullius.github.io/Max/blog/2022/09/11/Tri1Final.html",
@@ -78,7 +89,7 @@
     
   
     
-        ,"post7": {
+        ,"post8": {
             "title": "My first Blog",
             "content": "print(&quot;hello world&quot;) . hello world . Blog . I like pizz | .",
             "url": "https://maxtullius.github.io/Max/jupyter/2022/09/09/FirstNotebook.html",
@@ -89,7 +100,7 @@
     
   
     
-        ,"post8": {
+        ,"post9": {
             "title": "An Example Markdown Post",
             "content": "This is my first Markdown . You must run cells above to define project . echo “Navigate to project, then navigate to area wwhere files were cloned” . cd $project echo “show the contents of README.md” echo “” . cat README.md # show contents of file, in this case markdown echo “” echo “end of README.md” .",
             "url": "https://maxtullius.github.io/Max/markdown/2022/09/09/FirstMarkdown.html",
@@ -100,7 +111,7 @@
     
   
     
-        ,"post9": {
+        ,"post10": {
             "title": "Scrumprocess",
             "content": "Scrumprocess . . title: Scrumprocess | toc: true | comments: true | categories: [Blog] | - | . | . .",
             "url": "https://maxtullius.github.io/Max/2022/07/22/ScrumProcess.html",
@@ -111,7 +122,18 @@
     
   
     
-        ,"post10": {
+        ,"post11": {
+            "title": "Binary Math",
+            "content": "Binary Math with Conversions . Plus Binary Octal Hexadecimal Decimal Minus . +1 | 00000000 | 0 | 0 | 0 | -1 | . Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | Turn on | . | | | | | | | | .",
+            "url": "https://maxtullius.github.io/Max/frontend/binary",
+            "relUrl": "/frontend/binary",
+            "date": " • Jul 7, 2022"
+        }
+        
+    
+  
+    
+        ,"post12": {
             "title": "List and Dictionary",
             "content": "InfoDb = [] InfoDb.append({ &quot;FirstName&quot;: &quot;Max&quot;, &quot;LastName&quot;: &quot;Tullius&quot;, &quot;DOB&quot;: &quot;February 1&quot;, &quot;Residence&quot;: &quot;San Diego&quot;, &quot;FavColor&quot;: &quot;Purple&quot;, &quot;Email&quot;: &quot;max@lrtullius.com&quot;, &quot;Owns_Cars&quot;: [&quot;No Car&quot;] }) InfoDb.append({ &quot;FirstName&quot;: &quot;Jake&quot;, &quot;LastName&quot;: &quot;Warren&quot;, &quot;DOB&quot;: &quot;September 8&quot;, &quot;Residence&quot;: &quot;San Diego&quot;, &quot;FavColor&quot;: &quot;Blue&quot;, &quot;Email&quot;: &quot;jacobw22751@stu.powayusd.com&quot;, &quot;Owns_Cars&quot;: [&quot;2016-Toyota Tacoma&quot;] }) InfoDb.append({ &quot;FirstName&quot;: input(&quot;Name:&quot;), &quot;LastName&quot;: input(&quot;Last Name:&quot;), &quot;DOB&quot;: input(&quot;DOB:&quot;), &quot;Residence&quot;: input(&quot;Residence&quot;), &quot;FavColor&quot;: input(&quot;Favorite Color&quot;), &quot;Email&quot;: input(&quot;Email:&quot;), &quot;Owns_Cars&quot;: input(&quot;Owned_Cars:&quot;) }) print(InfoDb) . [{&#39;FirstName&#39;: &#39;Max&#39;, &#39;LastName&#39;: &#39;Tullius&#39;, &#39;DOB&#39;: &#39;February 1&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;FavColor&#39;: &#39;Purple&#39;, &#39;Email&#39;: &#39;max@lrtullius.com&#39;, &#39;Owns_Cars&#39;: [&#39;No Car&#39;]}, {&#39;FirstName&#39;: &#39;Jake&#39;, &#39;LastName&#39;: &#39;Warren&#39;, &#39;DOB&#39;: &#39;September 8&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;FavColor&#39;: &#39;Blue&#39;, &#39;Email&#39;: &#39;jacobw22751@stu.powayusd.com&#39;, &#39;Owns_Cars&#39;: [&#39;2016-Toyota Tacoma&#39;]}, {&#39;FirstName&#39;: &#39;&#39;, &#39;LastName&#39;: &#39;&#39;, &#39;DOB&#39;: &#39;&#39;, &#39;Residence&#39;: &#39;&#39;, &#39;FavColor&#39;: &#39;&#39;, &#39;Email&#39;: &#39;&#39;, &#39;Owns_Cars&#39;: &#39;&#39;}] . def print_data(d_rec): print(d_rec[&quot;FirstName&quot;], d_rec[&quot;LastName&quot;]) # using comma puts space between values print(&quot; t&quot;, &quot;Residence:&quot;, d_rec[&quot;Residence&quot;]) # t is a tab indent print(&quot; t&quot;, &quot;FavColor:&quot;, d_rec[&quot;FavColor&quot;]) print(&quot; t&quot;, &quot;Birth Day:&quot;, d_rec[&quot;DOB&quot;]) print(&quot; t&quot;, &quot;Cars:&quot;, d_rec[&quot;Owns_Cars&quot;]) # end=&quot;&quot; make sure no return occurs print() def for_loop(): print(&quot;For loop output n&quot;) for record in InfoDb: print_data(record) for_loop() . For loop output Max Tullius Residence: San Diego FavColor: Purple Birth Day: February 1 Cars: [&#39;No Car&#39;] Jake Warren Residence: San Diego FavColor: Blue Birth Day: September 8 Cars: [&#39;2016-Toyota Tacoma&#39;] Residence: FavColor: Birth Day: Cars: .",
             "url": "https://maxtullius.github.io/Max/notebook/2022/06/10/Dictionary.html",
@@ -122,7 +144,7 @@
     
   
     
-        ,"post11": {
+        ,"post13": {
             "title": "App Lab Notes",
             "content": "Notes . My test is about the NFL | For everything you put you need event | Use a playspeech bar in event for wrong answers | When the question is answered you have to use the setscreen command to go to the next question | . My Quiz . https://studio.code.org/projects/applab/xLIAqcPGXDiH_RvTNshZYcz_WuaeP7Q6K_t976Xw2zw | . Issues . I couldn&#39;t figure out how to make the sound go off per button but then I needed to add the event with play speech | .",
             "url": "https://maxtullius.github.io/Max/blog/2022/05/10/AppLab.html",
@@ -169,7 +191,10 @@
   
 
   
-      ,"page10": {
+  
+
+  
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://maxtullius.github.io/Max/robots.txt",
