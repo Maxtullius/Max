@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -134,20 +134,16 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Vocabulary">Vocabulary<a class="anchor-link" href="#Vocabulary"> </a></h2><ul>
-<li>Problem:<ul>
-<li>Decision Problem:</li>
-<li>Organization Problem:</li>
-</ul>
-</li>
-<li>Instance:</li>
-<li>Efficiency:<ul>
-<li>Polynomial Efficiency (Good):</li>
-<li>Exponential Efficiency (Bad):</li>
-</ul>
-</li>
-<li>Heuristic Approach:</li>
-<li>Decidable Problem:</li>
-<li>Undecidable Problem:</li>
+<li>Problem: a general description of a task that can or cannot be solved algorithmically</li>
+<li>Decision Problem: A problem with a yes or no answer</li>
+<li>Organization Problem: a problem with a goal of finding the best answer</li>
+<li>Instance: a problem with a specific input</li>
+<li>Efficiency: amount of computing needed to solve a problem</li>
+<li>Polynomial Efficiency (Good): more work takes a proportional amount of time (1 job is +2 time)</li>
+<li>Exponential Efficiency (Bad): more work takes an exponential amount more time (1 job is 2x time)</li>
+<li>Heuristic Approach: When optimal solutions are inefficient, look for a possibly optimal solution that is more efficient</li>
+<li>Decidable Problem: A decision problem that has a clear solution that will always make a correct output</li>
+<li>Undecidable Problem: A decision problem with no solution that is not gaurenteed to produce the correct output</li>
 </ul>
 
 </div>
@@ -188,9 +184,9 @@ Fully programmed solution will improve your grade, at a minimum show that you tr
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)):</span>
             <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
                 <span class="n">exists</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="k">return</span> <span class="n">exists</span>
         <span class="k">if</span> <span class="n">exists</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">exists</span>
-    <span class="k">return</span> <span class="n">exists</span>
     <span class="c1">#--------------------</span>
 <span class="n">starttime</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100000</span><span class="p">):</span>
@@ -210,7 +206,7 @@ Fully programmed solution will improve your grade, at a minimum show that you tr
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>6.984534740447998 seconds
+<pre>0.5217399597167969 seconds
 </pre>
 </div>
 </div>
@@ -298,17 +294,65 @@ Fully programmed solution will improve your grade, at a minimum show that you tr
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fastestroute</span><span class="p">(</span><span class="n">start</span><span class="p">,</span><span class="n">data</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fastestroute</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
     <span class="n">drivetime</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">order</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="c1">#CODE,CODE,CODE</span>
-    <span class="k">return</span><span class="p">(</span><span class="n">drivetime</span><span class="p">,</span><span class="n">order</span><span class="p">)</span>
+    <span class="n">current_location</span> <span class="o">=</span> <span class="n">start</span>
+    <span class="n">visited</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">current_location</span><span class="p">)</span>
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">visited</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+        <span class="n">neighbors</span> <span class="o">=</span> <span class="n">get_neighbors</span><span class="p">(</span><span class="n">current_location</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">neighbors</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="n">min_time</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">)</span>
+        <span class="n">chosen_neighbor</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">for</span> <span class="n">neighbor</span><span class="p">,</span> <span class="n">time</span> <span class="ow">in</span> <span class="n">neighbors</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">neighbor</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visited</span> <span class="ow">and</span> <span class="n">time</span> <span class="o">&lt;</span> <span class="n">min_time</span><span class="p">:</span>
+                <span class="n">min_time</span> <span class="o">=</span> <span class="n">time</span>
+                <span class="n">chosen_neighbor</span> <span class="o">=</span> <span class="n">neighbor</span>
+        <span class="n">drivetime</span> <span class="o">+=</span> <span class="n">min_time</span>
+        <span class="n">order</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">chosen_neighbor</span><span class="p">)</span>
+        <span class="n">current_location</span> <span class="o">=</span> <span class="n">chosen_neighbor</span>
+        <span class="n">visited</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">current_location</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">drivetime</span><span class="p">,</span> <span class="n">order</span>
 
 <span class="n">start</span> <span class="o">=</span> <span class="s1">&#39;DelNorte&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fastestroute</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">dataset</span><span class="p">))</span>
+
+
+
+
 <span class="c1"># &#39;dataset&#39; is the name of the nested key value pair</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/maxtullius/vscode/Max/_notebooks/2022-12-14-117-118-homework.ipynb Cell 11</span> in <span class="ansi-cyan-fg">&lt;cell line: 23&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/maxtullius/vscode/Max/_notebooks/2022-12-14-117-118-homework.ipynb#X13sZmlsZQ%3D%3D?line=19&#39;&gt;20&lt;/a&gt;</span>     return drivetime, order
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:/Users/maxtullius/vscode/Max/_notebooks/2022-12-14-117-118-homework.ipynb#X13sZmlsZQ%3D%3D?line=21&#39;&gt;22&lt;/a&gt;</span> start = &#39;DelNorte&#39;
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/maxtullius/vscode/Max/_notebooks/2022-12-14-117-118-homework.ipynb#X13sZmlsZQ%3D%3D?line=22&#39;&gt;23&lt;/a&gt;</span> print(fastestroute(start, dataset))
+
+<span class="ansi-green-intense-fg ansi-bold">/Users/maxtullius/vscode/Max/_notebooks/2022-12-14-117-118-homework.ipynb Cell 11</span> in <span class="ansi-cyan-fg">fastestroute</span><span class="ansi-blue-fg">(start, data)</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/maxtullius/vscode/Max/_notebooks/2022-12-14-117-118-homework.ipynb#X13sZmlsZQ%3D%3D?line=2&#39;&gt;3&lt;/a&gt;</span> order = []
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/maxtullius/vscode/Max/_notebooks/2022-12-14-117-118-homework.ipynb#X13sZmlsZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span> current_location = start
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/maxtullius/vscode/Max/_notebooks/2022-12-14-117-118-homework.ipynb#X13sZmlsZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt;</span> visited.add(current_location)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/maxtullius/vscode/Max/_notebooks/2022-12-14-117-118-homework.ipynb#X13sZmlsZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span> while len(visited) &lt; len(data):
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/maxtullius/vscode/Max/_notebooks/2022-12-14-117-118-homework.ipynb#X13sZmlsZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span>     neighbors = get_neighbors(current_location, data)
+
+<span class="ansi-red-fg">NameError</span>: name &#39;visited&#39; is not defined</pre>
+</div>
+</div>
+
 </div>
 </div>
 
