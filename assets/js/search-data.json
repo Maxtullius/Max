@@ -2,55 +2,55 @@
   
     
         "post0": {
-            "title": "Night At The Museum Notes",
-            "content": "Notes . I think that Night at the Museum was a success. | People said that the project me and my group created was very cool. | The only thing I have that could make Night at the Museum better is that maybe find bigger space for the csp room because the room gets very crowded and sometimes its hard to here the presenter or get around the room to new projects. | My favorite part of Night at the Museum was the ceramics area. | I saw lots of very cool pottery like a cool watermelon painted small bowl, a small teapot, and much more. | In photo, I saw a picter by Luke Starr that looked very amazing. He used the lighting of the building to make it the focus of the picture and used the water to create a astonishing relfection of the building and its beautiful lights. | . I have images they won&#39;t upload for some reason so I can show you them in class | .",
-            "url": "https://maxtullius.github.io/Max/blog/2023/02/27/N@TM.html",
-            "relUrl": "/blog/2023/02/27/N@TM.html",
-            "date": " • Feb 27, 2023"
+            "title": "Note Template",
+            "content": "Take some additional notes that you would like here for 3.12 and 3.13. We will be looking for additional notes from the presentation. . What are procedures? . Fill in the blanks please: . Procedure: is a named group of programming instructions that may have parameters and return values. . Parameters: are input values of a procedure. . Arguments: specify the values of the parameters when a procedure is called . Modularity: Separating a program&#39;s functions into independent pieces or blocks, each containing all the parts needed to execute a single aspect of the functionality . Procedural Abstraction: rovides a name for a process that allows a procedure to be used only knowing WHAT it does, not HOW it does it. . What are some other names for procedures?: method or function depending on the language . Why are procedures effective?: We have the ability to alter the result without actually changing the calls to the program . Challenge 1 below: Add the command that will call the procedure. . decimal = 7 def convertToBinary(n): bin = &quot;&quot; i = 7 while i &gt;= 0: if n % (2**i) == n: bin = bin + &quot;0&quot; i -= 1 else: bin = bin + &quot;1&quot; n -= 2**i i -= 1 print(bin) convertToBinary(decimal) . 00000111 . Challenge 2 below: Complete the Min and Max procedure in either JavaScript and Python using the instructions from the JavaScript page. (JavaScript will get you a extra 0.1) . num1 = 6 num2 = 7 function findMax(numberA, numberB) { if (numberA &gt; numberB) { console.log(numberA + &quot; is max&quot;) } else { console.log(numberB + &quot; is max&quot;) } } function findMin(numberA, numberB) { if (numberA &lt; numberB) { console.log(numberA + &quot; is min&quot;) } else { console.log(numberB + &quot; is min&quot;) } } findMax(num1, num2) findMin(num1,num2) . Input In [7] function findMax(numberA, numberB) { ^ SyntaxError: invalid syntax . Homework/Hacks: For the hw, you have two options, easy or hard. The easy hack is for a 2.7 + extra work for the full 3. The easy hack is simply creating your own procedure with your own creativity. Since there is a lot of leeway for this one, you must do additional work to get a 3. For the hard hack, below is the start to a character to binary convertor. This is just a template, but the goal is to translate &quot;APCSP&quot; into binary. You can delete the existing code if you want. The only contraint is that you must use a procedure. Doing this will get you a 3. . string = &quot;APCSP&quot; up = [&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;,&quot;R&quot;,&quot;S&quot;,&quot;T&quot;,&quot;U&quot;,&quot;V&quot;,&quot;W&quot;,&quot;X&quot;,&quot;Y&quot;,&quot;Z&quot;] low = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;,&quot;g&quot;,&quot;h&quot;,&quot;i&quot;,&quot;j&quot;,&quot;k&quot;,&quot;l&quot;,&quot;m&quot;,&quot;n&quot;,&quot;o&quot;,&quot;p&quot;,&quot;q&quot;,&quot;r&quot;,&quot;s&quot;,&quot;t&quot;,&quot;u&quot;,&quot;v&quot;,&quot;w&quot;,&quot;x&quot;,&quot;y&quot;,&quot;z&quot;] declist = [] binlist = [] def charToBinary(x): for y in up: if x == y: declist.append((up.index(x)) + 65) for z in low: if x == z: declist.append((low.index(x)) + 97) def convert(dec): bin = &quot;&quot; i = 7 while i &gt;= 0: if dec % (2**i) == dec: bin = bin + &quot;0&quot; i -= 1 else: bin = bin + &quot;1&quot; dec -= 2**i i -= 1 binlist.append(bin) for ch1 in string: charToBinary(ch1) for decimal in declist: convert(decimal) print(binlist) . [&#39;01000001&#39;, &#39;01010000&#39;, &#39;01000011&#39;, &#39;01010011&#39;, &#39;01010000&#39;] .",
+            "url": "https://maxtullius.github.io/Max/2023/02/28/notetemplate.html",
+            "relUrl": "/2023/02/28/notetemplate.html",
+            "date": " • Feb 28, 2023"
         }
         
     
   
     
         ,"post1": {
-            "title": "Note Template",
-            "content": "Take some additional notes that you would like here for 3.12 and 3.13. We will be looking for additional notes from the presentation. . What are procedures? . Fill in the blanks please: . Procedure: is a named group of programming instructions that may have parameters and return values. . Parameters: are input values of a procedure. . Arguments: specify the values of the parameters when a procedure is called . Modularity: Separating a program&#39;s functions into independent pieces or blocks, each containing all the parts needed to execute a single aspect of the functionality . Procedural Abstraction: rovides a name for a process that allows a procedure to be used only knowing WHAT it does, not HOW it does it. . What are some other names for procedures?: method or function depending on the language . Why are procedures effective?: We have the ability to alter the result without actually changing the calls to the program . Challenge 1 below: Add the command that will call the procedure. . decimal = 7 def convertToBinary(n): bin = &quot;&quot; i = 7 while i &gt;= 0: if n % (2**i) == n: bin = bin + &quot;0&quot; i -= 1 else: bin = bin + &quot;1&quot; n -= 2**i i -= 1 print(bin) convertToBinary(decimal) . 00000111 . Challenge 2 below: Complete the Min and Max procedure in either JavaScript and Python using the instructions from the JavaScript page. (JavaScript will get you a extra 0.1) . num1 = 6 num2 = 7 function findMax(numberA, numberB) { if (numberA &gt; numberB) { console.log(numberA + &quot; is max&quot;) } else { console.log(numberB + &quot; is max&quot;) } } function findMin(numberA, numberB) { if (numberA &lt; numberB) { console.log(numberA + &quot; is min&quot;) } else { console.log(numberB + &quot; is min&quot;) } } findMax(num1, num2) findMin(num1,num2) . Input In [7] function findMax(numberA, numberB) { ^ SyntaxError: invalid syntax . Homework/Hacks: For the hw, you have two options, easy or hard. The easy hack is for a 2.7 + extra work for the full 3. The easy hack is simply creating your own procedure with your own creativity. Since there is a lot of leeway for this one, you must do additional work to get a 3. For the hard hack, below is the start to a character to binary convertor. This is just a template, but the goal is to translate &quot;APCSP&quot; into binary. You can delete the existing code if you want. The only contraint is that you must use a procedure. Doing this will get you a 3. . string = &quot;APCSP&quot; up = [&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;,&quot;G&quot;,&quot;H&quot;,&quot;I&quot;,&quot;J&quot;,&quot;K&quot;,&quot;L&quot;,&quot;M&quot;,&quot;N&quot;,&quot;O&quot;,&quot;P&quot;,&quot;Q&quot;,&quot;R&quot;,&quot;S&quot;,&quot;T&quot;,&quot;U&quot;,&quot;V&quot;,&quot;W&quot;,&quot;X&quot;,&quot;Y&quot;,&quot;Z&quot;] low = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;,&quot;g&quot;,&quot;h&quot;,&quot;i&quot;,&quot;j&quot;,&quot;k&quot;,&quot;l&quot;,&quot;m&quot;,&quot;n&quot;,&quot;o&quot;,&quot;p&quot;,&quot;q&quot;,&quot;r&quot;,&quot;s&quot;,&quot;t&quot;,&quot;u&quot;,&quot;v&quot;,&quot;w&quot;,&quot;x&quot;,&quot;y&quot;,&quot;z&quot;] declist = [] binlist = [] def charToBinary(x): for y in up: if x == y: declist.append((up.index(x)) + 65) for z in low: if x == z: declist.append((low.index(x)) + 97) def convert(dec): bin = &quot;&quot; i = 7 while i &gt;= 0: if dec % (2**i) == dec: bin = bin + &quot;0&quot; i -= 1 else: bin = bin + &quot;1&quot; dec -= 2**i i -= 1 binlist.append(bin) for ch1 in string: charToBinary(ch1) for decimal in declist: convert(decimal) print(binlist) . [&#39;01000001&#39;, &#39;01010000&#39;, &#39;01000011&#39;, &#39;01010011&#39;, &#39;01010000&#39;] .",
-            "url": "https://maxtullius.github.io/Max/2023/02/26/notetemplate.html",
-            "relUrl": "/2023/02/26/notetemplate.html",
-            "date": " • Feb 26, 2023"
+            "title": "Title",
+            "content": "",
+            "url": "https://maxtullius.github.io/Max/2023/02/28/Bash.html",
+            "relUrl": "/2023/02/28/Bash.html",
+            "date": " • Feb 28, 2023"
         }
         
     
   
     
         ,"post2": {
-            "title": "Title",
-            "content": "",
-            "url": "https://maxtullius.github.io/Max/2023/02/26/Bash.html",
-            "relUrl": "/2023/02/26/Bash.html",
-            "date": " • Feb 26, 2023"
+            "title": "Variables and Assignment Notes",
+            "content": "Notes . Variables represent a value | Mathematical expressions can be performed on the variable | You can define a variable using var and then the variable=the value | You can assign 2 objects to one variable | Use .append to add objects to the list | You break down list into other list | You can organize items in the lists using for loops | The split() method splits a string into a list. You can specify the separator, default separator is any whitespace. | The join() method takes all items in an iterable and joins them into one string. A string must be specified as the separator. | .",
+            "url": "https://maxtullius.github.io/Max/jupyter/2023/02/28/.1-3.2Notes.html",
+            "relUrl": "/jupyter/2023/02/28/.1-3.2Notes.html",
+            "date": " • Feb 28, 2023"
         }
         
     
   
     
         ,"post3": {
-            "title": "Variables and Assignment Notes",
-            "content": "Notes . Variables represent a value | Mathematical expressions can be performed on the variable | You can define a variable using var and then the variable=the value | You can assign 2 objects to one variable | Use .append to add objects to the list | You break down list into other list | You can organize items in the lists using for loops | The split() method splits a string into a list. You can specify the separator, default separator is any whitespace. | The join() method takes all items in an iterable and joins them into one string. A string must be specified as the separator. | .",
-            "url": "https://maxtullius.github.io/Max/jupyter/2023/02/26/.1-3.2Notes.html",
-            "relUrl": "/jupyter/2023/02/26/.1-3.2Notes.html",
-            "date": " • Feb 26, 2023"
+            "title": "3.1-3.2 Homework",
+            "content": "albums = [ (&quot;Welcome to my Nightmare&quot;, &quot;Alice Cooper&quot;, 1975, # First album list [ (1, &quot;Welcome to my Nightmare&quot;), (2, &quot;Devil&#39;s Food&quot;), (3, &quot;The Black Widow&quot;), (4, &quot;Some Folks&quot;), (5, &quot;Only Women Bleed&quot;), ] ), (&quot;Bad Company&quot;, &quot;Bad Company&quot;, 1974, # Second album list [ (1, &quot;Can&#39;t Get Enough&quot;), (2, &quot;Rock Steady&quot;), (3, &quot;Ready for Love&quot;), (4, &quot;Don&#39;t Let Me Down&quot;), (5, &quot;Bad Company&quot;), (6, &quot;The Way I Choose&quot;), (7, &quot;Movin&#39; On&quot;), (8, &quot;Seagull&quot;), ] ), (&quot;Nightflight&quot;, &quot;Budgie&quot;, 1981, [ (1, &quot;I Turned to Stone&quot;), (2, &quot;Keeping a Rendezvous&quot;), (3, &quot;Reaper of the Glory&quot;), (4, &quot;She Used Me Up&quot;), ] ), (&quot;More Mayhem&quot;, &quot;Imelda May&quot;, 2011, [ (1, &quot;Pulling the Rug&quot;), (2, &quot;Psycho&quot;), (3, &quot;Mayhem&quot;), (4, &quot;Kentish Town Waltz&quot;), ] ), ] album = input(&quot;What is your desired album?&quot;) song = input(&quot;What is your desired song?&quot;) print(albums[int(album) - 1][3][int(song) - 1][1]) . Some Folks .",
+            "url": "https://maxtullius.github.io/Max/jupyter/2023/02/28/.1-3.2Homework.html",
+            "relUrl": "/jupyter/2023/02/28/.1-3.2Homework.html",
+            "date": " • Feb 28, 2023"
         }
         
     
   
     
         ,"post4": {
-            "title": "3.1-3.2 Homework",
-            "content": "albums = [ (&quot;Welcome to my Nightmare&quot;, &quot;Alice Cooper&quot;, 1975, # First album list [ (1, &quot;Welcome to my Nightmare&quot;), (2, &quot;Devil&#39;s Food&quot;), (3, &quot;The Black Widow&quot;), (4, &quot;Some Folks&quot;), (5, &quot;Only Women Bleed&quot;), ] ), (&quot;Bad Company&quot;, &quot;Bad Company&quot;, 1974, # Second album list [ (1, &quot;Can&#39;t Get Enough&quot;), (2, &quot;Rock Steady&quot;), (3, &quot;Ready for Love&quot;), (4, &quot;Don&#39;t Let Me Down&quot;), (5, &quot;Bad Company&quot;), (6, &quot;The Way I Choose&quot;), (7, &quot;Movin&#39; On&quot;), (8, &quot;Seagull&quot;), ] ), (&quot;Nightflight&quot;, &quot;Budgie&quot;, 1981, [ (1, &quot;I Turned to Stone&quot;), (2, &quot;Keeping a Rendezvous&quot;), (3, &quot;Reaper of the Glory&quot;), (4, &quot;She Used Me Up&quot;), ] ), (&quot;More Mayhem&quot;, &quot;Imelda May&quot;, 2011, [ (1, &quot;Pulling the Rug&quot;), (2, &quot;Psycho&quot;), (3, &quot;Mayhem&quot;), (4, &quot;Kentish Town Waltz&quot;), ] ), ] album = input(&quot;What is your desired album?&quot;) song = input(&quot;What is your desired song?&quot;) print(albums[int(album) - 1][3][int(song) - 1][1]) . Some Folks .",
-            "url": "https://maxtullius.github.io/Max/jupyter/2023/02/26/.1-3.2Homework.html",
-            "relUrl": "/jupyter/2023/02/26/.1-3.2Homework.html",
-            "date": " • Feb 26, 2023"
+            "title": "Night At The Museum Notes",
+            "content": "Notes . I think that Night at the Museum was a success. | People said that the project me and my group created was very cool. | The only thing I have that could make Night at the Museum better is that maybe find bigger space for the csp room because the room gets very crowded and sometimes its hard to here the presenter or get around the room to new projects. | My favorite part of Night at the Museum was the ceramics area. | I saw lots of very cool pottery like a cool watermelon painted small bowl, a small teapot, and much more. | In photo, I saw a picter by Luke Starr that looked very amazing. He used the lighting of the building to make it the focus of the picture and used the water to create a astonishing relfection of the building and its beautiful lights. | . I have images they won&#39;t upload for some reason so I can show you them in class | .",
+            "url": "https://maxtullius.github.io/Max/blog/2023/02/27/N@TM.html",
+            "relUrl": "/blog/2023/02/27/N@TM.html",
+            "date": " • Feb 27, 2023"
         }
         
     
