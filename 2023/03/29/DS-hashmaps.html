@@ -653,7 +653,7 @@ producer: ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Loui
     <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"Graduation"</span><span class="p">,</span>
     <span class="s2">"artist"</span><span class="p">:</span> <span class="s2">"Kanye West"</span><span class="p">,</span>
     <span class="s2">"year"</span><span class="p">:</span> <span class="mi">2007</span><span class="p">,</span>
-    <span class="s2">"tracks"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">"songs"</span><span class="p">:</span> <span class="p">{</span>
         <span class="mi">1</span><span class="p">:</span> <span class="s2">"Good Morning"</span><span class="p">,</span>
         <span class="mi">2</span><span class="p">:</span> <span class="s2">"Champion"</span><span class="p">,</span>
         <span class="mi">3</span><span class="p">:</span> <span class="s2">"I Wonder"</span><span class="p">,</span>
@@ -672,9 +672,9 @@ producer: ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Loui
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Artist:"</span><span class="p">,</span> <span class="n">graduation_album</span><span class="p">[</span><span class="s2">"artist"</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Year:"</span><span class="p">,</span> <span class="n">graduation_album</span><span class="p">[</span><span class="s2">"year"</span><span class="p">])</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Track List:"</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">track_num</span><span class="p">,</span> <span class="n">title</span> <span class="ow">in</span> <span class="n">graduation_album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">track_num</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Songs:"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">song_num</span><span class="p">,</span> <span class="n">title</span> <span class="ow">in</span> <span class="n">graduation_album</span><span class="p">[</span><span class="s2">"songs"</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">song_num</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">title</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -691,7 +691,7 @@ producer: ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Loui
 Artist: Kanye West
 Year: 2007
 
-Track List:
+Songs:
 1. Good Morning
 2. Champion
 3. I Wonder
